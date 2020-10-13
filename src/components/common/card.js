@@ -12,13 +12,17 @@ import {
 } from "react-bootstrap";
 
 function CommonCard(props) {
+  console.log(props, "propspspsp");
   return (
     <>
-      <Card>
+      <Card className={props.className}>
         <Card.Body>
-          <Card.Title>{props.title}</Card.Title>
+          {props.blog === true && <Card.Img src={props.img} />}
+          <Card.Title>
+            {props.blog === true ? props.title : <img src={props.img} alt="" />}
+          </Card.Title>
           <Card.Subtitle className="mb-2 ">{props.subtitle}</Card.Subtitle>
-          <Card.Text>{props.children}</Card.Text>
+          <Card.Text>{props.description}</Card.Text>
         </Card.Body>
       </Card>
     </>

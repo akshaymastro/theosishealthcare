@@ -4,9 +4,9 @@ import { Navbar, Nav, NavDropdown, FormControl, Button } from "react-bootstrap";
 function TopNav() {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg">
+      <Navbar collapseOnSelect expand="lg" fixed="top">
         <Navbar.Brand href="#home">
-          <img src="/logo.png" />
+          <img src="/logo.png" alt=""/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
