@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "../components/common/slider";
-import { Row, Col, Button } from "react-bootstrap";
+import { Row, Col, Button, Container } from "react-bootstrap";
 import Carousel from "./Carousel";
 import Medicine from "./Medicine";
 import Testimonials from "./Testimonials";

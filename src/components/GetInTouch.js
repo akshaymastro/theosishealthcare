@@ -18,12 +18,12 @@ function Quest() {
               </p>
               <div className="">
                 <label>Address</label>
-                <span>79 Ayer Rajah Crescent, #05-03, Singapore 139955</span>
+                <span class="address">79 Ayer Rajah Crescent, #05-03, Singapore 139955</span>
               </div>
             </div>
           </Col>
           <Col sm={6}>
-            <Form>
+            <Form className="getInTouch">
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Your Name</Form.Label>
                 <Form.Control type="" placeholder="Your Name" />
