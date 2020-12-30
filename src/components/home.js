@@ -7,6 +7,9 @@ import Testimonials from "./Testimonials";
 import Faq from "./Faq";
 import GetInTouch from "./GetInTouch";
 import Blog from "./Blog";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+
 function home(props) {
   const settings = {
     infinite: true,
@@ -16,6 +19,7 @@ function home(props) {
   };
   return (
     <>
+      <Navbar />
       <Slider settings={settings}>
         <div>
           <img src="/services2.png" alt="" />
@@ -72,6 +76,7 @@ function home(props) {
       <Faq />
       <GetInTouch />
       <Blog />
+      <Footer />
     </>
   );
 }

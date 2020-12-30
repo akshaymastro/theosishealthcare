@@ -6,20 +6,21 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import Home from "./components/home";
+import Admin from "./components/Admin";
+import BlogContent from "./components/BlogContent";
+import blogform from "./components/blogform";
+
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Route path="/" component={Home} />
-      {/* <Switch>
-      <Route path="/work" component={Work} />
-      <Route path="/projects" component={Project} />
-      <Route path="/dashboard" component={Dashboard} />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/admin" component={Admin} />
+        <Route exact path="/blogcontent" component={BlogContent} />
+        <Route exact path="/createblog" component={blogform} />
+      </Switch>
 
-
-      </Switch> */}
-
-      <Footer />
+     
     </Router>
   );
 }
